@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>      <html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>      <html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>pagoaltoque.com</title>
+
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- google web font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+
+<link rel="shortcut icon" type="image/x-icon" href="http://sab.compassperu.com/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="http://sab.compassperu.com/favicon.ico" />
+
+   <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap/css/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap/css/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+    <link href="libs/bootstrap/fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="libs/bootstrap/css/layout-dark.css" rel="stylesheet" type="text/css" title="dark" />
+  </head>
+
+  
+  <body>
+
+<!-- div Modal de acceso a pago al toque, solo aparece cuando se invoca-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Acceso a PAGO AL TOQUE</h4>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+       <!-- login form -->
+              <form action="#" method="post" class="sky-form boxed">
+                <fieldset class="nomargin">
+                <label class="input margin-bottom-10">
+                    <i class="ico-append glyphicon glyphicon-user"></i>
+                    <input required type="email" placeholder="Usuario">
+                   
+                  </label>
+                  <label class="input margin-bottom-10">
+                    <i class="ico-append fa fa-lock"></i>
+                    <input required type="password" placeholder="Contraseña">
+                  </label>
+            </fieldset>
+          <!-- solo mostrar cuando la validacion es incorrecta, -->
+            <div class="alert alert-mini alert-danger">
+                Usuario y/o contraseña incorrectas
+              </div>
+
+              </form>
+              <!-- /login form -->
+      </div>
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="window.location='extranet.html';">Aceptar</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Div flotante para info de contacto -->
+    <div id="slidetop">
+
+      <div class="container">
+        
+        <div class="row">
+
+          <div class="col-md-4">
+            <h6><i class="fa fa-comment"></i>Contacto</h6>
+            <p>Fondo de Inversión para Pymes 
+              <br> Amador Merino Reyna 267 piso 11, Lima 27, Perú 
+              <br> T 511 6115350 F 511 6115351 <br> Horario de atención: Lunes a Viernes de 8:30 am a 5 pm</p>
+          </div>
+
+          
+
+          <div class="col-md-4">
+            <h6><i class="fa fa-comments-o"></i>Servicio al Cliente</h6>
+            <p>E-mail: servicioalclienteperu@cgcompass.com.
+            <br>Fax: 6115351
+            <br>Regina Ortiz T 611.5376 
+            <br>Octavio Meyhuey T 611.5371
+          </div>
+
+        </div>
+
+      </div>
+
+        <!-- "a" element que sirve para expandir/colapsar el div de contacto -->
+      <a class="slidetop-toggle" ></a>
+
+    </div>
+    <!-- fin div flotante -->
+
+
+    <!-- wrapper -->
+    <div>
+
+      <div id="header" class="sticky clearfix">
+
+        <!-- cabecera/header -->
+        <header id="topNav">
+          <div class="container">
+
+            <!-- Menu Button para mobile -->
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Logo -->
+            <a class="logo pull-left " href="index.html" >
+              <img src="images/logo.png" alt="" />
+            </a>
+
+            <!-- Menu de opciones -->
+            <div class="navbar-collapse pull-right nav-main-collapse collapse">
+              <nav class="nav-main">
+
+                
+                <ul id="topMain" class="nav nav-pills nav-main  nav-onepage">
+                  <li>
+                    <a href="#home">
+                      <i class="fa fa-chevron-circle-right"></i>&nbsp;Inicio
+                    </a>
+                  </li>
+                   <li>
+                    <a href="#ventajas">
+                      <i class="fa fa-chevron-circle-right"></i>&nbsp;Ventajas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#compass">
+                      <i class="fa fa-chevron-circle-right"></i>&nbsp;Compass
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#fondo">
+                      <i class="fa fa-chevron-circle-right"></i>&nbsp;Pymes
+                    </a>
+                  </li>
+                 <li>
+                    <a href="#operaciones">
+                    <i class="fa fa-chevron-circle-right"></i>&nbsp;Operaciones
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="modal" data-target="#myModal">
+                      <i class="fa fa-user"></i>&nbsp;Acceso
+                    </a>
+                  </li>
+                  
+                </ul>
+
+              </nav>
+            </div>
+
+          </div>
+        </header>
+      </div>
+
+    <!-- seccion1: animacion + pagoaltoque  -->
+    <section id ="home">
+        <div class="container">
+<p/>
+          <article class="row">
+            <div class="col-md-6">
+              <!-- jquery component: OWL SLIDER -->
+              <div class="owl-carousel buttons-autohide controlls-over nomargin" data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": true, "transitionStyle":"backSlide", "progressBar":"true"}'>
+                <div>
+                  <img class="img-responsive" src="images/animacion00.jpg" alt="">
+                </div>
+                <div>
+                  <img class="img-responsive" src="images/animacion01.jpg" alt="">
+                </div>
+                <div>
+                  <img class="img-responsive" src="images/animacion02.jpg" alt="">
+                </div>
+                <div>
+                  <img class="img-responsive" src="images/animacion03.jpg" alt="">
+                </div>
+                 <div>
+                  <img class="img-responsive" src="images/animacion04.jpg" alt="">
+                </div>
+              </div>
+             
+            </div>
+            <div class="col-md-6">
+               <p>PAGO AL TOQUE.COM es la manera mas eficiente para hacer líquidas sus cuentas por cobrar. A través de este sistema, los Proveedores pueden obtener liquidez inmediata a cambio de la cesión a favor del Fondo de sus cuentas por cobrar ya que recibirán los abonos directos en sus cuentas bancarias al día siguiente de que Compass recibe los archivos de pago del cliente pagador.
+<p><h4>¿Cómo es el proceso de pagos? </h4></p>
+<p>1. El proveedor entrega sus facturas al cliente y éste las ingresa a su Sistema Contable para generar el archivo de pagos. <br>2. Una vez confirmada la fecha de pago de las acreencias, el cliente envía a Compass el archivo de pagos. <br>3. Compass procesa el archivo de pagos y al día siguiente efectúa los abonos a los proveedores en sus cuentas bancarias.<br>4. El Proveedor accede a pagoaltoque y puede visualizar el detalle de su abono.</p>
+<!-- boton de acceso -->
+<a href="#"  class="btn btn-lg btn-red" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-user"></i> ACCEDE A PAGO AL TOQUE</a> 
+
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- section2: ventajas y requisitos -->
+      <section class="alternate" id="ventajas">
+
+          <header class="text-center margin-bottom-60">
+            <p/>
+            <h2 class="tex-black">Ventajas para el Proveedor</h2>
+            <!--<p class="lead font-lato">Texto texto texto texto</p>-->
+
+            <hr />
+          </header>
+
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+
+              <!--<h3 class="size-20"><span class="icon-ar icon-ar-lg icon-ar-inverse"><i class="fa fa-thumbs-o-up"></i></span> Ventajas</h3>-->
+              <ul class="list-unstyled">
+                <li><i class="fa fa-caret-right"></i> Al adquirir sus cuentas por cobrar, el dinero en efectivo se deposita directamente en la cuenta bancaria que usted designe</li>
+                <li><i class="fa fa-caret-right"></i> La adquisición de sus cuentas por cobrar son sin recurso, es decir, Compass asume el riesgo de pago de sus clientes</li>
+                <li><i class="fa fa-caret-right"></i> No afecta sus líneas de crédito bancarias ni constituye endeudamiento</li>
+                <li><i class="fa fa-caret-right"></i> Tasas nominales anuales competitivas</li>
+                <li><i class="fa fa-caret-right"></i> Liquidez inmediata sin costos adicionales, asegurando la puntualidad de sus cobranzas</li>
+                <li><i class="fa fa-caret-right"></i> Ahorro en los procesos operativos y administrativos de cobranza</li>
+                <li><i class="fa fa-caret-right"></i> No requiere de la presentación física de la factura para desembolsar</li>
+                <li><i class="fa fa-caret-right"></i> Acceso a nuestra página web las 24 horas del día durante los siete días de la semana y en cualquier lugar del mundo, ingresando con su usuario y clave de acceso </li>
+                <li><i class="fa fa-caret-right"></i> A través de nuestra página web podrá realizar consultas sobre el estado de pago de sus facturas</li>
+                      <li><i class="fa fa-caret-right"></i> Asesoría telefónica para proveedores al 6115375</li>
+
+              </ul>
+            </div>
+
+
+<div class="col-md-6 col-sm-6">
+              <!--<h3 class="size-20"><span class="icon-ar icon-ar-lg icon-ar-inverse"><i class="fa fa-check-square"></i></span> Requisitos</h3>-->
+              <p class="tex-black"><i class="fa fa-check-square"></i>&nbsp;&nbsp;<b>Requisitos Empresas Personas Jurídicas</b></p>
+              <ul class="list-unstyled">
+                 <li><i class="fa fa-caret-right"></i> Fotocopia Simple del Testimonio de Constitución de la Empresa</li>
+                <li><i class="fa fa-caret-right"></i> Fotocopia Simple del DNI de(los) Representante(s) Legal(es) de la empresa</li>
+                <li><i class="fa fa-caret-right"></i> Fotocopia Simple del Testimonio de Constitución de la Empresa</li>
+                <li><i class="fa fa-caret-right"></i> Copia Literal completa en original con una vigencia no mayor a 5 días</li>
+                <li><i class="fa fa-caret-right"></i> Contrato Marco de Cesión de Acreencias y Anexo 1 en duplicado, debidamente llenado, firmado por los representantes legales y sus respectivos sellos de la empresa</li>
+              </ul>
+              <p class="tex-black"><i class="fa fa-check-square"></i>&nbsp;&nbsp;<b>Requisitos Empresas Personas Natural</b></p>
+              <ul class="list-unstyled">
+                 <li><i class="fa fa-caret-right"></i> Fotocopia Simple del DNI del titular</li>
+                <li><i class="fa fa-caret-right"></i> Fotocopia Simple del RUC</li>
+                <li><i class="fa fa-caret-right"></i> Contrato Marco de Cesiòn de Acreencias y Anexo 1 en duplicado, debidamente llenado y firmado por el titular</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- / -->
+
+
+      <!-- section2: ventajas y requisitos -->
+      <section id="compass">
+        <div class="container">
+
+          <header class="text-center margin-bottom-60">
+            <p/>
+            <h2>Compass Group SAFI</h2>
+           <!-- <p class="lead font-lato">texto texto texto texto texto</p>-->
+
+            <hr />
+          </header>
+
+
+          <div class="row">
+           <div class="col-md-12 col-sm-12 col-xs-12">
+<img class="pull-left" align=center src="images/image-1.jpg" >
+ 
+
+             <p>
+Compass Group SAFI S.A. pertenece a Compass Group:
+</p><p>
+Basada en Nueva York y con filiales en los principales países de América Latina, Compass Group es un grupo Administrador de Fondos de Inversión orientado a desarrollar soluciones de inversión en mercados emergentes para inversionistas globales y soluciones globales para inversionistas latinoamericanos.
+</p><p>
+La comprobada experiencia y larga trayectoria de sus socios en el campo de las finanzas, así como el fuerte respaldo de importantes instituciones asociadas al grupo, otorgan a Compass un posicionamiento único e integral en el manejo y asesoría de inversiones.
+</p><p>
+Compass apunta a ser reconocida globalmente como una empresa proveedora de soluciones de inversión altamente calificada, de acuerdo a las exigencias de los inversionistas institucionales y privados más sofisticados del mundo. La forma en que Compass administra las carteras y fondos de inversión de sus clientes se basa en los principios más avanzados de la teoría financiera moderna y en un conocimiento pleno de las tendencias económicas imperantes a nivel mundial.
+</p><p>
+La presencia de Compass en Nueva York permite el acceso directo a los recursos que proporciona el centro financiero más importante del mundo, los que son aprovechados por la compañía con una actitud constante de investigación y actualización en materias de inversión. Compass potencia su accionar con una red de filiales en América Latina, lo que permite lograr un conocimiento profundo de la región y establecer una relación cercana y de largo plazo con sus clientes.
+</p><p>
+Compass Group empezó a operar en el Perú en el año 2002 con el objetivo de ofrecer al mercado peruano la capacidad global de Compass Group en la gestión de portafolios de inversión tanto para instituciones como para personas naturales. Las actividades de Compass en el Perú se integran así a la red de afiliadas de Compass Group a nivel regional.</p>
+<ul>
+  <li><p>Administración de fondos, gestionamos más de US$ 660 millones en inversiones de Renta Fija y Renta Variable en fondos locales y regionales latinoamericanos</p></li>
+   <li><p>Asesoria en inversiones globales, asesoramos a clientes privados e institucionales por más de US$ 500 millones en sus inversiones a nivel global</p></li>
+    <li><p>Inversiones de capital privado, gestionamos un fondo de US$ 80 millones para inversiones en empresas latinoamericanas no transadas en bolsa, en asociación con JP Morgan Capital y CDP</p></li>
+  </ul>
+
+
+</div>  
+          </div>
+      </div>
+      </section>
+      <!-- / -->
+
+
+
+<!-- section3: Fondo -->
+      <section id="fondo" class="alternate">
+        <div class="container">
+<p/>
+          <header class="text-center margin-bottom-60">
+           <h2 class="tex-black">Fondo de Inversión para PYMES</h2>
+            <!--<p class="lead font-lato">texto texto texto texto texto</p>-->
+
+            <hr />
+          </header>
+
+
+          <div class="row">
+           <div class="col-md-12 col-sm-12 col-xs-12 ">
+<img class="pull-left" align=center src="images/pymes.PNG" >
+ 
+
+             
+Es un fondo de inversión que se constituyó por oferta pública en el mercado peruano e inició operaciones a finales de abril de 2004. La suscripción de las cuotas de participación del fondo fue por un monto de US$ 55 millones.
+Este fondo tiene como objetivo principal proveer de capital de trabajo principalmente a las pequeñas y medianas empresas que venden al crédito bienes y/o servicios a empresas peruanas.
+<br><br>
+El fondo establece una relación comercial con empresas locales con el fin de afiliar a sus proveedores al servicio de www.pagoaltoque.com para que éstos puedan hacer líquidas sus cuentas por cobrar
+<br><br>
+Es un fondo de inversión que se constituyó por oferta pública en el mercado peruano e inició operaciones a finales de abril de 2004. La suscripción de las cuotas de participación del fondo fue por un monto de US$ 55 millones.
+Este fondo tiene como objetivo principal proveer de capital de trabajo principalmente a las pequeñas y medianas empresas que venden al crédito bienes y/o servicios a empresas peruanas.
+<br><br>
+El fondo establece una relación comercial con empresas locales con el fin de afiliar a sus proveedores al servicio de www.pagoaltoque.com para que éstos puedan hacer líquidas sus cuentas por cobrar
+</p>
+</div>  
+          </div>
+      </div>
+      </section>
+      <!-- / -->
+
+
+<!-- section3: operaciones-->
+      <section id="operaciones">
+        <div class="container">
+<p/>
+          <header class="text-center margin-bottom-60">
+           <h2>Operaciones Puntuales</h2>
+            <!--<p class="lead font-lato">texto texto texto texto texto</p>-->
+
+            <hr />
+          </header>
+
+
+          <div class="row">
+           <div class="col-md-12 col-sm-12 col-xs-12">
+<img class="pull-left" align=center src="images/operaciones.PNG" >
+ 
+
+             <p>
+La forma de participar en este programa de financiamiento es sumamente sencilla y segura para los proveedores, y los requisitos son los siguientes:
+</p><p>
+ 
+
+a) Que sus clientes pagadores sean alguna de las siguientes empresas:
+<br>
+Alicorp S.A.A. / Supermercados Peruanos / E. Wong S.A. / Cementos Pacasmayo S.A.A.<br>
+ / Gloria S.A. / Quimpac S.A. / Palmas del Espino
+<br><br>
+b) Firmar un convenio de cesión de acreencias con Compass <br>
+c) Obtener la aceptación de la cesión formalmente del cliente (documento a ser firmado por el cliente y Compass).<br><br>
+d) Afiliarse al programa cumpliendo con los siguientes requisitos que se entregarán con el convenio firmado :
+<br>
+
+&nbsp;&nbsp;&nbsp;a. Fotocopia Simple del Testimonio de Constitución de la Empresa.<br>
+&nbsp;&nbsp;&nbsp;b. Copia Simple del DNI del (los) Representante (s) Legal (s) de la empresa.<br>
+&nbsp;&nbsp;&nbsp;c. Constancia de Vigencia de Poderes en original a la fecha. En la cual debe estar consignada alguna de estas facultades:
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Compra venta de documentos de crédito.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. Compra venta de instrumentos con contenido crediticio.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. Venta de cartera.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iv. Facultades de disposición de derechos personales.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v. Facultades de disposición genéricos.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vi. Compra venta de bienes, valores mobiliarios, títulos valores.<br>
+
+ </p><p>
+Una vez afiliado, los proveedores podrán ceder los derechos de cobro de sus facturas y letras, los cuales serán adquiridos y pagados por el Fondo PYMES, asumiendo la empresa pagadora la responsabilidad del pago por los mismos al Fondo PYMES.
+</p><p>
+En caso de estar interesados de participar en este programa, les agradeceremos se sirvan contactarnos a los teléfonos 611-5375 y 611-5371 o enviar un mail a servicioalclienteperu@cgcompass.com con la finalidad de remitirles la documentación indicada. 
+</p>
+</div>  
+          </div>
+      </div>
+      </section>
+      <!-- / -->
+
+
+
+      <!-- FOOTER -->
+      <footer id="footer">
+        
+        <div class="copyright">
+          <div class="container">
+          <img src="images/logotipoindex.png" /><br>  
+          &nbsp;&nbsp; 2015, Todos los derechos reservados
+          </div>
+        </div>
+      </footer>
+      <!-- /FOOTER -->
+
+    </div>
+    
+
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <div class="inner">
+        <span class="loader"></span>
+      </div>
+    </div><!-- /PRELOADER -->
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script type="text/javascript">var plugin_path = 'libs/jquery/plugins/';</script>  
+    <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/jquery/scripts.js"></script>
+    
+    </body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--[if IE 8]>      <html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>      <html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <title>pagoaltoque.com</title>
+
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+    <!-- google web font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+
+<link rel="shortcut icon" type="image/x-icon" href="http://sab.compassperu.com/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="http://sab.compassperu.com/favicon.ico" />
+
+   <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap/css/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap/css/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+    <link href="libs/bootstrap/fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="libs/bootstrap/css/layout-dark.css" rel="stylesheet" type="text/css" title="dark" />
+  </head>
+
+  
+  <body>
+
+<!-- div Modal de acceso a pago al toque, solo aparece cuando se invoca-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Acceso a PAGO AL TOQUE</h4>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+       <!-- login form -->
+              <form action="#" method="post" class="sky-form boxed">
+                <fieldset class="nomargin">
+                <label class="input margin-bottom-10">
+                    <i class="ico-append glyphicon glyphicon-user"></i>
+                    <input required type="email" placeholder="Usuario">
+                   
+                  </label>
+                  <label class="input margin-bottom-10">
+                    <i class="ico-append fa fa-lock"></i>
+                    <input required type="password" placeholder="Contraseña">
+                  </label>
+            </fieldset>
+          <!-- solo mostrar cuando la validacion es incorrecta, -->
+            <div class="alert alert-mini alert-danger">
+                Usuario y/o contraseña incorrectas
+              </div>
+
+              </form>
+              <!-- /login form -->
+      </div>
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="window.location='extranet.html';">Aceptar</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Div flotante para info de contacto -->
+    <div id="slidetop">
+
+      <div class="container">
+        
+        <div class="row">
+
+          <div class="col-md-4">
+            <h6><i class="fa fa-comment"></i>Contacto</h6>
+            <p>Fondo de Inversión para Pymes 
+              <br> Amador Merino Reyna 267 piso 11, Lima 27, Perú 
+              <br> T 511 6115350 F 511 6115351 <br> Horario de atención: Lunes a Viernes de 8:30 am a 5 pm</p>
+          </div>
+
+          
+
+          <div class="col-md-4">
+            <h6><i class="fa fa-comments-o"></i>Servicio al Cliente</h6>
+            <p>E-mail: servicioalclienteperu@cgcompass.com.
+            <br>Fax: 6115351
+            <br>Regina Ortiz T 611.5376 
+            <br>Octavio Meyhuey T 611.5371
+          </div>
+
+        </div>
+
+      </div>
+
+        <!-- "a" element que sirve para expandir/colapsar el div de contacto -->
+      <a class="slidetop-toggle" href="#"></a>
+
+    </div>
+    <!-- fin div flotante -->
+
+
+    <!-- wrapper -->
+    <div>
+
+      <div id="header" class="sticky clearfix">
+
+        <!-- cabecera/header -->
+        <header id="topNav">
+          <div class="container">
+
+            <!-- Menu Button para mobile -->
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Logo -->
+            <a class="logo pull-left" href="index.html">
+              <img src="images/logo.png" alt="" />
+            </a>
+
+            <!-- Menu de opciones -->
+            <div class="navbar-collapse pull-right nav-main-collapse collapse">
+              <nav class="nav-main">
+
+                
+                <ul id="topMain" class="nav nav-pills nav-main">
+                  
+                  <li>
+                    <a href="interior.html" class="selected">
+                      <i class="fa fa-chevron-circle-right"></i>&nbsp;&nbsp;Compass Group SAFI
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-chevron-circle-right"></i>&nbsp;&nbsp;Fondo de Inversion
+                    </a>
+                  </li>
+                 <li>
+                    <a href="#">
+                    <i class="fa fa-chevron-circle-right"></i>&nbsp;&nbsp;Operaciones Puntuales
+                    </a>
+                  </li>
+                  <li>
+                    <a data-toggle="modal" data-target="#myModal">
+                      <i class="fa fa-user"></i>&nbsp;&nbsp;Acceso
+                    </a>
+                  </li>
+                  
+                </ul>
+
+              </nav>
+            </div>
+
+          </div>
+        </header>
+      </div>
+
+    <section class="page-header page-header-xs dark">
+        <div class="container">
+
+          <h1>Compass Group SAFI</h1>
+          
+
+        </div>
+      </section>
+      <!-- /PAGE HEADER -->
+
+
+
+
+      <section>
+        <div class="container">
+        
+          <div class="row">
+ <div class="col-md-12 col-sm-12 col-xs-12">
+<img class="pull-left" align=center src="images/image-1.jpg" width=280>
+ 
+
+              <p>Compass Group Safi S.A. es una Sociedad Administradora de Fondos de Inversión cuyo objetivo es la estructuración, colocación y gestión de fondos de inversión que actualmente tiene bajo su administración dos fondos de Inversión: Compass Group Renta Fija Fondo de Inversión Mixta Especializada y Compass – Fondo de Inversión para PYMES que son reguladas por la CONASEV.
+</p><p>
+Compass Group SAFI S.A. pertenece a Compass Group:
+</p><p>
+Basada en Nueva York y con filiales en los principales países de América Latina, Compass Group es un grupo Administrador de Fondos de Inversión orientado a desarrollar soluciones de inversión en mercados emergentes para inversionistas globales y soluciones globales para inversionistas latinoamericanos.
+</p><p>
+La comprobada experiencia y larga trayectoria de sus socios en el campo de las finanzas, así como el fuerte respaldo de importantes instituciones asociadas al grupo, otorgan a Compass un posicionamiento único e integral en el manejo y asesoría de inversiones.
+</p><p>
+Compass apunta a ser reconocida globalmente como una empresa proveedora de soluciones de inversión altamente calificada, de acuerdo a las exigencias de los inversionistas institucionales y privados más sofisticados del mundo. La forma en que Compass administra las carteras y fondos de inversión de sus clientes se basa en los principios más avanzados de la teoría financiera moderna y en un conocimiento pleno de las tendencias económicas imperantes a nivel mundial.
+</p><p>
+La presencia de Compass en Nueva York permite el acceso directo a los recursos que proporciona el centro financiero más importante del mundo, los que son aprovechados por la compañía con una actitud constante de investigación y actualización en materias de inversión. Compass potencia su accionar con una red de filiales en América Latina, lo que permite lograr un conocimiento profundo de la región y establecer una relación cercana y de largo plazo con sus clientes.
+</p><p>
+Compass Group empezó a operar en el Perú en el año 2002 con el objetivo de ofrecer al mercado peruano la capacidad global de Compass Group en la gestión de portafolios de inversión tanto para instituciones como para personas naturales. Las actividades de Compass en el Perú se integran así a la red de afiliadas de Compass Group a nivel regional.</p>
+<ul>
+  <li><p>Administración de fondos, gestionamos más de US$ 660 millones en inversiones de Renta Fija y Renta Variable en fondos locales y regionales latinoamericanos</p></li>
+   <li><p>Asesoria en inversiones globales, asesoramos a clientes privados e institucionales por más de US$ 500 millones en sus inversiones a nivel global</p></li>
+    <li><p>Inversiones de capital privado, gestionamos un fondo de US$ 80 millones para inversiones en empresas latinoamericanas no transadas en bolsa, en asociación con JP Morgan Capital y CDP</p></li>
+  </ul>
+     </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer id="footer">
+        
+        <div class="copyright">
+          <div class="container">
+          <img src="images/bottom.png" /><br>  
+          &nbsp;&nbsp; 2015, Todos los derechos reservados
+          </div>
+        </div>
+      </footer>
+      <!-- /FOOTER -->
+
+    </div>
+    
+
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <div class="inner">
+        <span class="loader"></span>
+      </div>
+    </div><!-- /PRELOADER -->
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script type="text/javascript">var plugin_path = 'libs/jquery/plugins/';</script>  
+    <script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/jquery/scripts.js"></script>
+    
+    </body>
+</html>
