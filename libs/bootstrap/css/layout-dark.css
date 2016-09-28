@@ -8,7 +8,7 @@
 	border-width:2px;
 }
 .btn.btn-bordered:hover {
-	color:#333;
+	color:rgba(70, 70, 70, 0.8);
 	background-color:#ddd;
 }
 
@@ -23,7 +23,7 @@ section select,
 section textarea {
 	color:#fff !important;
 	border-color:#999 !important;
-	background-color:#212121 !important;
+	background-color:white !important;
 }
 h1.page-header,
 h2.page-header,
@@ -34,7 +34,7 @@ h6.page-header {
 	border-bottom-color:#666;
 }
 .page-header ul.page-header-tabs>li.active>a:hover {
-	background-color:#212121 ;
+	background-color:white ;
 }
 .page-header ul.page-header-tabs>li:hover,
 .page-header ul.page-header-tabs>li.active>a:hover {
@@ -51,10 +51,10 @@ a.href-reset,
 }
 
 body.boxed section {
-	background-color:#212121;
+	background-color:white;
 }
 section {
-	background-color:#212121;
+	background-color:white;
 	border-bottom:rgba(255,255,255,0.1) 1px solid;
 }
 	div.alternate,
@@ -65,7 +65,7 @@ section {
 
 .btn-default {
 	color:#fff;
-	background-color:#212121;
+	background-color:#6B6B6B;
 	border-color:#777;
 }
 body>#wrapper>.btn-default {
@@ -77,10 +77,10 @@ body>#wrapper>.btn-default {
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	color:#fff;
+	color:#d8262f;
 }
 p {
-	color:#ccc;
+	color:#555;
 }
 section .display-table h1,
 section .display-table h2,
@@ -89,7 +89,7 @@ section .display-table h4,
 section .display-table h5,
 section .display-table h6,
 section .display-table p {
-	color:#333;
+	color:rgba(70, 70, 70, 0.8);
 }
 
 
@@ -119,16 +119,16 @@ h6 a:hover {
 /**	OWL Carousel [essentials.css]
 *************************************************** **/
 .owl-theme .owl-controls .owl-buttons div {
-	color:#fff;
-	background:#212121; 
-	border:#212121 1px solid;
+	color:#555;
+	background:#e5e5e5; 
+	border:white 1px solid;
 }
 /* featured - basic carousel */
 .owl-carousel.featured .owl-featured-detail>a.featured-title {
 	color:#fff;
 }
 .owl-carousel.featured .owl-featured-detail:after {
-	border-bottom-color: #212121;
+	border-bottom-color: white;
 }
 .owl-carousel.featured .owl-featured-item:hover {
 	background-color: #111;
@@ -162,7 +162,7 @@ h2.owl-featured {
 	border-bottom-color:rgba(255,255,255,0.05);
 }
 #header #topMain {
-	background-color:#333;
+	background-color:#6B6B6B;
 }
 
 
@@ -172,7 +172,7 @@ h2.owl-featured {
 
 
 	#header {
-		background-color:#333;
+		background-color:#6B6B6B;
 		
 	}
 	#header #topMain.nav-pills>li>a {
@@ -180,7 +180,7 @@ h2.owl-featured {
 	}
 	#header #topMain.nav-pills>li.active>a,
 	#header #topMain.nav-pills>li>a:hover {
-		color:#a94545;
+		color:#d8262f;
 	}
 	
 	
@@ -208,7 +208,7 @@ h2.owl-featured {
 	background-color:rgba(0,0,0,0.1);
 }
 .page-header ul.page-header-tabs>li.active {
-	background-color: #212121;
+	background-color: white;
 }
 .page-header ul.page-header-tabs>li.active {
 	border: rgba(255,255,255,0.1) 1px solid;
@@ -235,11 +235,9 @@ h2.owl-featured {
 
 /** [Shortcode] Modals
 *************************************************** **/
-.modal-header{
-	border-bottom-color:rgba(255,255,255,0.2);
-}
+
 .modal-content {
-	background-color:#444;
+	background-color:#6B6B6B;
 }
 .modal-title,
 .modal-body,
@@ -254,22 +252,28 @@ h2.owl-featured {
 .modal-header .close {
 	color:#fff;
 }
+.modal-header {
 
+	border-bottom: 1px solid #ccc !important;
+}
+ 
+.modal-footer {
 
+	border-top: 0px solid #ccc !important;
+}
+ 
 
 
 
 /** [Plugin] Sky Form
  **************************************************************** **/
 .sky-form.boxed {
-	background-color:#333;
-	border:0;
+	background-color:#6B6B6B;
+	border:0px;
 }
 .sky-form header {
 	color:#fff;
-	background: -webkit-linear-gradient(top,#000 1%,#222 98%);
-	background: linear-gradient(to bottom,#000 1%,#222 98%);
-	border-bottom: rgba(255,255,255,.07) 1px solid;
+	border-bottom: white 0px solid;
 }
 .sky-form .checkbox i, 
 .sky-form .ico-append, 
@@ -279,7 +283,7 @@ h2.owl-featured {
 .sky-form .select select, 
 .sky-form .textarea textarea, 
 .sky-form .toggle i {
-	border-color:#666;
+	border-color:#ccc;
 }
 
 .sky-form .input input, 
@@ -304,6 +308,6 @@ h2.owl-featured {
 .sky-form .select select:focus, 
 .sky-form .textarea textarea:focus, 
 .sky-form .toggle input:focus+i {
-	border-color:#999;
+	border-color:#fff;
 }
 

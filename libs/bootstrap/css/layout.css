@@ -251,7 +251,7 @@ section .input-group-btn button.btn-default {
 #slidetop {
 	color:#888;
 	font-size:13px;
-	background-color:#000;
+	background-color:#6B6B6B;
 	z-index: 1500;
 	position: fixed;
 	top: 0; right: 0; left:0;
@@ -318,7 +318,7 @@ section .input-group-btn button.btn-default {
 }
 #slidetop a.slidetop-toggle:after {
 	font-family:'Open Sans',Arial,Helvetica,sans-serif;
-	content: "/ Contacto";
+	content: "  / Contacto  ";
 	height:18px;
 	color:#fff;
 	position:absolute; 
@@ -326,9 +326,9 @@ section .input-group-btn button.btn-default {
 	left: -66px;
 }
 	#slidetop.active a.slidetop-toggle:after {
-		
-		content: "/ Cerrar";
-		color:#696b70;
+		background-color: #6B6B6B;
+		content: "  / Cerrar  ";
+		color:#fff;
 	}
 
 	
