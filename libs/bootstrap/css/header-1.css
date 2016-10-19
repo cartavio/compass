@@ -1,10 +1,9 @@
 #topMain>li>a {
-	height:96px;
-	line-height:76px;
+	margin-top: 30px;
 }
 #topMain.nav-pills>li>a {
 	color:#1F262D;
-	font-weight:400;
+	/*font-weight:400;*/
 	background-color:transparent;
 } 
 #topMain.nav-pills>li:hover>a, 

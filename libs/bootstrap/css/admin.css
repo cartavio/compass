@@ -257,7 +257,7 @@ ul#mini-nav {
 
 /* Sub Navigation starts  */
 .sub-nav {
-  background-color: #a94545;
+  background-color: #cc0000;
   -webkit-border-radius: 0 4px 0 0;
   -moz-border-radius: 0 4px 0 0;
   border-radius: 0 4px 0 0;
@@ -493,7 +493,7 @@ ul#mini-nav {
 
 
 footer {
-  background: #a94545;
+  background: #cc0000;
   color: white;
   font-weight: normal;
   line-height: 30px;
@@ -586,7 +586,7 @@ footer {
     display: none; }
   #cssmenu > ul > li {
     float: left;
-    background-color: #a94545;
+    background-color: #cc0000;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f2f2f2), color-stop(85%, #ebebeb), to(#cccccc));
     background-image: -webkit-linear-gradient(#f2f2f2, #ebebeb 85%, #cccccc);
     background-image: -moz-linear-gradient(top, #f2f2f2, #ebebeb 85%, #cccccc);
@@ -599,17 +599,17 @@ footer {
     margin-right: 1px;
     border-radius: 3px 3px 0 0; }
     #cssmenu > ul > li.active {
-      background: #a94545; }
+      background: #cc0000; }
       #cssmenu > ul > li.active a {
         color: white; }
         #cssmenu > ul > li.active a i {
           color: white; }
       #cssmenu > ul > li.active:hover {
-        background: #a94545; }
+        background: #cc0000; }
     #cssmenu > ul > li:hover {
-      background: #a94545; }
+      background: #cc0000; }
     #cssmenu > ul > li > a i {
-      color: #E41E13;
+      color: #cccccc;
       text-align: center;
       display: block;
       margin-bottom: 5px;
@@ -671,7 +671,7 @@ footer {
   #cssmenu.align-right ul ul {
     text-align: right; }
   #cssmenu ul ul li {
-    background: #9C3031;
+    background: #737373;
     height: 0;
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
@@ -686,7 +686,7 @@ footer {
   #cssmenu li:hover > ul > li {
     height: 35px; }
     #cssmenu li:hover > ul > li:hover {
-      background: #a94545; }
+      background: #cc0000; }
   #cssmenu ul ul ul {
     margin-left: 100%;
     top: 0; }
@@ -838,7 +838,7 @@ footer {
       display: block;
       padding: 20px 17px;
       color: white;
-      background-color: #a94545;
+      background-color: #cc0000;
       cursor: pointer;
       font-size: 12px;
       text-transform: uppercase;
